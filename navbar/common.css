@@ -1,0 +1,13 @@
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+    background-color: rgba(62, 62, 251, 0.986);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

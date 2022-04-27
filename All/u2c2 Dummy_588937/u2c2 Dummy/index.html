@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        background-color: aliceblue;
+        
+      }
+      #header>h1{
+          text-align: center;
+        }
+        #blogs-container{
+          padding: 20px;
+          display: grid;
+          grid-template-columns: repeat(3,1fr) ;
+          grid-template-rows: repeat(1,1fr);
+          gap: 20px;
+          background-color: white;
+        }
+        #blogs-container img{
+          width: 100%;
+        }
+        #header{
+          padding: 20px;
+          background-color: white;
+        }
+        
+        #blogs-container h3{
+          margin-top: -12px;
+        }
+        #catagory-container{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: repeat(2,auto);
+          padding: 40px;
+          gap: 10px;
+        }
+        #catagory-container img{
+          width: 150px;
+          height: 150px;
+          display: block;
+          border-radius: 200px;
+          margin: auto;
+          margin-top: 20px;
+          
+        }
+        #catagory-container p,
+        #catagory-container h3{
+          text-align: center;
+          padding: 10px 40px;
+        }
+        #catagory-container div{
+          background-color: white;
+        }
+        
+        #catagory-container p{
+          margin-top: -35px;
+          line-height: 20px;
+        }
+        /* Medium screens */
+        @media all and (min-width:451px) and (max-width:750px){
+            
+            #blogs-container{
+              padding: 20px;
+              display: grid;
+              grid-template-columns: repeat(2,1fr) ;
+              grid-template-rows: repeat(1,1fr);
+              gap: 20px;
+              background-color: white;
+            }
+            #catagory-container{
+              display: grid;
+              grid-template-columns: repeat(3,1fr);
+              grid-template-rows: repeat(2,auto);
+              padding: 40px;
+              gap: 10px;
+            }
+            
+        }
+
+
+        /* Small Screens */
+        @media all and (min-width:100px) and (max-width:450px){
+          
+            #blogs-container{
+              padding: 20px;
+              display: grid;
+              grid-template-columns: repeat(1,1fr) ;
+              grid-template-rows: repeat(1,1fr);
+              gap: 20px;
+              background-color: white;
+            }
+            #catagory-container{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              grid-template-rows: repeat(2,auto);
+              padding: 40px;
+              gap: 10px;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Our Blog Posts</h1>
+    </div>
+    <div id="blogs-container">
+      <!-- All the Blogs will be here  -->
+      <div>
+        <img src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/2514/Marina%20Bay%20Sands.jpg?crop=370:240&downsize=370:240" alt="">
+        <p>29 January 2019</p>
+        <h3>Architectural Art Modern</h3>
+        <!-- the images, date and the blog heading will be here  -->
+      </div>
+      <div>
+        <img src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/2514/MerlionDay.jpg?crop=370:240&downsize=370:240" alt="">
+        <p>29 January 2019</p>
+        <h3>Architectural Art Modern</h3>
+        <!-- the images, date and the blog heading will be here  -->
+      </div>
+      <div>
+        <img src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/2514/Singapore.jpg?crop=370:240&downsize=370:240" alt="">
+        <p>29 January 2019</p>
+        <h3>Architectural Art Modern</h3>
+        <!-- the images, date and the blog heading will be here  -->
+      </div>
+    </div>
+    <div id="catagory-container">
+      <!-- All the boxes for blog catagory goes here  -->
+      <div>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-456" alt="">
+        <h3>Creative Design</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+      </div>
+      <div>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-456" alt="">
+        <h3>Digital Marketing </h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+      </div>
+      <div>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-456" alt="">
+        <h3>Application Design</h3>
+        <p><p>Far far away, behind the word mountains, far from the countries Vokalia.</p></p>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+      </div>
+      <div>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-456" alt="">
+        <h3>Application Design</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+      </div>
+      <div>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-456" alt="">
+        <h3>Application Design</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+      </div>
+      <div>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-456" alt="">
+        <h3>Application Design</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+      </div>
+      <div>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-456" alt="">
+        <h3>Application Design</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+      </div>
+      <div>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-456" alt="">
+        <h3>Application Design</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+      </div>
+    </div>
+  </body>
+</html>

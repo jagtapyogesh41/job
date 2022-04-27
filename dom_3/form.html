@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #format{
+            margin: auto;
+            width: 40%;
+            font-size: 30px;
+            color: gray;
+        }
+        #select,div input{
+            width: 80%;
+            height: 30px;
+            font-size: 25px;
+        }
+        h1{
+            margin: auto;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #Product{
+            width: 90%;
+            display: grid;
+            justify-content: center;
+            margin: auto;
+            grid-template-columns: repeat(5,1fr);
+            /* grid-template-rows: repeat(10,200px); */
+            gap: 20px;
+            margin-top: 50px;
+        }
+        #Product div{
+            line-height: 10px;
+        }
+        #product h2{
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="format">
+            <h1>Bozaz Product</h1>
+            <form id="form">
+                <label for="">Product</label><br>
+                <select name="" id="catagory">
+                    <option value="">product</option>
+                <option value="Electronics" >Electronics</option>
+                <option value="Furniture" >Furniture</option>
+                <option value="Home Appliances" >Home Appliance</option>
+                <option value="Books ">Books</option>
+            </select><br>
+            <label for="">Title</label><br>
+            <input type="text" id="title"><br>
+            <label for="">Discription</label><br>
+            <input type="text" id="desc"><br>
+            <label for="">Price</label><br>
+            <input type="Number" id="price"><br><br>
+
+            <input type="submit">
+            </form>
+        </div>
+        <div id="Product">
+
+
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+var form=document.querySelector("#form");
+var product=document.querySelector("#Product");
+
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+
+    var data={
+        Catagery:form.catagory.value,
+        title:form.title.value,
+        Desc:form.desc.value,
+        Price:form.price.value
+    }
+    display(data);
+    // console.log(data)
+})
+
+function display(data){
+    var parent=document.createElement("div");
+
+    var heading=document.createElement("h2");
+    heading.innerText=data.Catagery;
+
+    var title=document.createElement("p");
+    title.innerText=data.title;
+
+    var desc=document.createElement("p");
+    desc.innerText=data.Desc;
+
+    var price=document.createElement("p");
+    price.innerText=data.price
+
+    var btn=document.createElement("button");
+    btn.textContent="Delete";
+    btn.addEventListener("click",function(event){
+        event.target.parentNode.remove();
+    })
+
+    parent.append(heading,title,desc,price,btn);
+
+    product.append(parent)
+
+
+}
+
+</script>

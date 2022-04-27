@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    var buttons = [
+        { textContent: "Preimary", color: "white", bgcolor: "blue"},
+        { textContent: "Secondary", color: "white", bgcolor: "gray"},
+        { textContent: "Success", color: "white", bgcolor: "green"},
+        { textContent: "Danger", color: "white", bgcolor: "red"},
+        { textContent: "Warning", color: "black", bgcolor: "yellow"},
+        { textContent: "Info", color: "white", bgcolor: "cyon"},
+        { textContent: "Light", color: "black", bgcolor: "white"},
+        { textContent: "Dark", color: "white", bgcolor: "black"},
+        { textContent: "Link", color: "clue", bgcolor: "white"},
+
+    ];
+
+    buttons.forEach(function(ele) {
+        console.log(ele)
+        var btn=document.createElement("button");
+        btn.innerText = ele.textContent;
+        btn.style.backgroundColor = ele.bgcolor;
+        btn.style.color = ele.color;
+        // btn.style.margin-left= "10px";
+        document.querySelector("body").append(btn);
+    });
+</script>

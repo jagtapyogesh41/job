@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,auto);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frontend</h1>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    var InvestorArr=JSON.parse(localStorage.getItem("investorData"));
+    console.log(InvestorArr);
+
+    InvestorArr.forEach(function (elem) {
+
+    var box = document.createElement("div");
+
+
+    // InvestorImg:InvestorForm.imgURL.value,
+    //         InvestorName:InvestorForm.name.value,
+    //         InvestorRole:InvestorForm.role.value,
+    //         InvestorCompLogo:InvestorForm.Clogo.value,
+
+
+
+
+
+
+    var InvestorImg = document.createElement("img");
+    InvestorImg.setAttribute("src", elem.imgURL);
+    var InvestorName = document.createElement("h3");
+    InvestorName.innerText = elem.name;
+    var InvestorRole = document.createElement("p");
+    InvestorRole.innerText = elem.role;
+    var InvestorCompLogo = document.createElement("img");
+    InvestorCompLogo.setAttribute("src", elem.Clogo);
+    box.append(InvestorImg, InvestorName, InvestorRole, InvestorCompLogo);
+    document.querySelector("#container").append(box);
+  });
+</script>

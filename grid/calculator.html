@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       h1{
+           text-align: center;
+           font-size: 60px;
+       }
+       #calci{
+           
+           width: 450px;
+           height: 500px;
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           margin: auto;
+           padding: 80px;
+       }
+       #display{
+           width: 90%;
+           height: 60px;
+           /* border: 1px solid red; */
+           margin: auto;
+           border-radius: 20px;
+           text-align: center;
+           align-items: center;
+           font-size: 30px;
+           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+       }
+       #keyboard{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: repeat(4,80px);
+           gap: 30px ;
+           padding: 25px;
+
+       }
+       .box{
+           display: flex;
+           /* border: 1px solid red; */
+           justify-content: center;
+           align-items: center;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-size: 30px;
+            font-weight: 700;
+       }
+       .box:hover{
+           background-color: teal;
+       }
+       .black{
+           background-color: black;
+           color: white;
+       }
+       .red{
+           background-color: red;
+           color: white;
+       }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="calci">
+        <div id="display"></div>
+        <div id="keyboard">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box black">+</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box black">-</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box black">*</div>
+            <div class="box red">C</div>
+            <div class="box">0</div>
+            <div class="box black">=</div>
+            <div class="box black">/</div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var key = document.querySelectorAll("#keyboard>div");
+    var bag="";
+
+    for (var i=0;i<key.length;i++)
+    {
+        key[i].addEventListener("click",myCalculater);
+    }
+
+    function myCalculater(){
+        var targetNumber = event.target.innerText;
+
+        if (targetNumber=="C")
+        {
+            document.querySelector("#display").innerText ="";
+
+        }
+        else if (targetNumber=="=")
+        {
+            console.log(eval(bag));
+            document.querySelector("#display").innerText= eval(bag);
+        }
+        else {
+            bag=bag+targetNumber;
+            document.querySelector("#display").innerText = bag;
+        }
+    }
+
+</script>

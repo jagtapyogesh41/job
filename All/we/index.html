@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Session Flex + Position</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        display: flex;
+       width: 70%;
+       margin: auto;
+       margin-top: 30px;
+    }
+    .card {
+        width: 300px;
+        border: 1px solid rgb(224, 224, 224);
+        margin: auto;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .footer {
+        border-top: 1px solid black;
+    }
+
+    h3,
+    p {
+        margin: 5px 0px;
+    }
+
+    .box-img {
+        width: 100%;
+        position: relative;
+    }
+    .best{
+        display: flex;
+        position: absolute;
+        margin-top: -40px;
+
+    }
+    .best p{
+        margin-left: 10px;
+        background-color: azure;
+        color: black;
+        
+    }
+    .one{
+        width: 70%;
+        display: flex;
+        /* margin-left: 10px; */
+        justify-content: space-between;
+    }
+    .card-text+p,
+    .one+p,
+    .one>p:nth-child(2){
+        /* font-size: 20px; */
+        color: gray;
+        
+    }
+    .one>p:nth-child(2){
+        text-decoration: line-through;
+    }
+    .one>p:last-child{
+        color: green;
+        font-weight: 700;
+    }
+    .one>p:first-child{
+        font-weight: 700;
+    }
+</style>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <div class="best">
+                    <p>BestSeller</p>
+                    <p>Offer</p>
+                </div>
+            </div>
+            <h3 class="card-heading">Kids Garments</h3>
+            <p class="card-text">
+                <p>
+                    Layars Party Dress-navy Multi
+                </p>
+            <div class="one">
+                <p> Rs 18,00</p>
+                <p>Rs 3,000</p>
+                <p>40% Off</p>
+            </div>
+        <p>1-2 Years, 2-3 Years,3-4 Years,4-5 Years,5-...</p> </p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <div class="best">
+                    <p>BestSeller</p>
+                    <p>Offer</p>
+                </div>
+            </div>
+            <h3 class="card-heading">Kids Garments</h3>
+            <p class="card-text">
+                <p>
+                    Layars Party Dress-navy Multi
+                </p>
+            <div class="one">
+                <p> Rs 18,00</p>
+                <p>Rs 3,000</p>
+                <p>40% Off</p>
+            </div>
+        <p>1-2 Years, 2-3 Years,3-4 Years,4-5 Years,5-...</p> </p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                    
+                <div class="best">
+                    <p>BestSeller</p>
+                    <p>Offer</p>
+                </div>
+            </div>
+            <h3 class="card-heading">Kids Garments</h3>
+            <p class="card-text">
+                <p>
+                    Layars Party Dress-navy Multi
+                </p>
+            <div class="one">
+                <p> Rs 18,00</p>
+                <p>Rs 3,000</p>
+                <p>40% Off</p>
+            </div>
+        <p>1-2 Years, 2-3 Years,3-4 Years,4-5 Years,5-...</p> </p>
+        </div>
+        
+
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <div class="best">
+                    <p>BestSeller</p>
+                    <p>Offer</p>
+                </div>
+            </div>
+            <h3 class="card-heading">Kids Garments</h3>
+            <p class="card-text">
+                <p>
+                    Layars Party Dress-navy Multi
+                </p>
+            <div class="one">
+                <p> Rs 18,00</p>
+                <p>Rs 3,000</p>
+                <p>40% Off</p>
+            </div>
+        <p>1-2 Years, 2-3 Years,3-4 Years,4-5 Years,5-...</p> </p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                <div class="best">
+                    <p>BestSeller</p>
+                    <p>Offer</p>
+                </div>
+            </div>
+            <h3 class="card-heading">Kids Garments</h3>
+            <p class="card-text">
+                <p>
+                    Layars Party Dress-navy Multi
+                </p>
+            <div class="one">
+                <p> Rs 18,00</p>
+                <p>Rs 3,000</p>
+                <p>40% Off</p>
+            </div>
+        <p>1-2 Years, 2-3 Years,3-4 Years,4-5 Years,5-...</p> </p>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                    alt="" class="card-img">
+                    
+                <div class="best">
+                    <p>BestSeller</p>
+                    <p>Offer</p>
+                </div>
+            </div>
+            <h3 class="card-heading">Kids Garments</h3>
+            <p class="card-text">
+                <p>
+                    Layars Party Dress-navy Multi
+                </p>
+            <div class="one">
+                <p> Rs 18,00</p>
+                <p>Rs 3,000</p>
+                <p>40% Off</p>
+            </div>
+        <p>1-2 Years, 2-3 Years,3-4 Years,4-5 Years,5-...</p> </p>
+        </div>
+        
+
+    </div>
+</body>
+
+</html>

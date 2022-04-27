@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #up{
+            display: flex;
+            /* text-align: center; */
+            justify-content: center;
+            background-color: black;
+            color: aliceblue;
+        }
+        #nav{
+            display: flex;
+            height: 60px;
+            justify-content: space-evenly;
+            /* border: 1px solid red; */
+        }
+        .bar{
+            display: flex;
+            /* justify-content: space-evenly; */
+            /* border: 1px solid green; */
+            width: 45%;
+            height: 30px;
+            font-size: 14px;
+            margin-top: 12px;
+
+        }
+        .image{
+            /* border: 1px solid blue; */
+            width: auto;
+            height: 40px;
+            margin-top:10px ;
+            
+        }
+        .bar div{
+           margin: auto;
+        }
+        .bar button{
+            color: red;
+            padding-left: 20px;
+            padding-right: 20px;padding-top: -2px;
+            background-color: white;
+            border: 1px solid red;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+        #up>button{
+            color: red;
+            padding: 0px 20px;
+            background-color: black;
+            border: 0px;
+            margin-left: 10px;
+        }
+        #COURES{
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="up">
+        <p>  Register for The Coding Classroom and learn the basics of web development for free.</p>
+        <button>Register</button>
+    </div>
+    <div id="nav">
+        <div class="image">
+           <img src="https://www.masaischool.com/img/navbar/logo.svg" alt=""> 
+        </div>
+        <div class="bar">
+            <div>
+                <select name="COURES" id="COURES">
+                    <option value="1">COURES</option>
+                </select>
+            </div>
+            <div>FEES & ISA</div>
+            <div>ABOUT US</div>
+            <div>HIRE FROM US</div>
+            <div>FAQ</div>
+            <div>EVENTS</div>
+            <button>LOGIN</button>
+        </div>
+    </div>
+</body>
+</html>

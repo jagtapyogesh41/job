@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="name" placeholder="Enter your Name">
+    <input type="number" name="" id="mob" placeholder="Enter your Mobile Number">
+    <input type="submit" id="" value="Login">
+    </form>
+    
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",myFunction);
+    function myFunction(){
+        event.preventDefault();
+        // console.log("Inside")
+        var name=document.querySelector("#name").value;
+        var mob =document.querySelector("#mob").value;
+        console.log(name,mob)
+    } 
+</script>
